@@ -173,7 +173,7 @@ const Home = () => {
       dapp_encryption_public_key: bs58.encode(dappKeyPair.publicKey),
       cluster: "mainnet-beta",
       app_url: "https://phantom.app",
-      redirect_link: ,
+      redirect_link: window.location.href,
     });
 
     const url = buildUrl("connect", params);
